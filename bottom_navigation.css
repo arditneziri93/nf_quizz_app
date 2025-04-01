@@ -19,7 +19,7 @@
     color: #bcb5d7;
   }
 
-  .bottom-navigation__item:active svg {
+  .bottom-navigation__item-active svg {
     color: #fff;
   }
 }
