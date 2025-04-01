@@ -5,13 +5,21 @@
   margin: 0;
 }
 
+body {
+  font-family: roboto, sans-serif;
+}
+
 header {
   margin: 20px;
   text-align: center;
 }
 
+/*tablet*/
 @media (min-width: 768px) {
+  header {
+    text-align: start;
+  }
 }
-
+/*dekstop*/
 @media (min-width: 1024px) {
 }
