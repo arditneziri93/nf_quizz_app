@@ -3,12 +3,66 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-h1 {
+:root {
+  --lavender-bright: #f2f0f7;
+  --lavender-middle: #bcb5d7;
+  --lavender-dark: #7a6fac;
+}
+
+body {
   font-family: roboto, sans-serif;
-  background-color: #222;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+  background-color: var(--lavender-bright);
+}
+
+header {
+  padding: 20px 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fff;
+}
+
+header img {
+  padding-bottom: 20px;
+}
+
+header nav {
+  display: none;
+}
+
+.top-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.top-nav__item {
+  padding: 6px 20px 0;
+}
+
+.top-nav__item a {
+  text-decoration: none;
+  color: var(--lavender-middle);
+  font-size: 25px;
+}
+
+.top-nav__item a:hover,
+.top-nav__item a:active {
+  color: var(--lavender-dark);
+}
+
+/*tablet*/
+@media (min-width: 768px) {
+}
+/*dekstop*/
+@media (min-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
+  header nav {
+    display: block;
+  }
 }
