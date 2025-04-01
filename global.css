@@ -11,13 +11,32 @@ body {
 
 header {
   margin: 20px;
-  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+header nav {
+  display: none;
+}
+
+.top-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.top-nav__item {
+  margin: 20px;
 }
 
 /*tablet*/
 @media (min-width: 768px) {
   header {
-    text-align: start;
+    justify-content: space-between;
+  }
+  header nav {
+    display: block;
   }
 }
 /*dekstop*/
