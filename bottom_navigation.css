@@ -1,0 +1,25 @@
+.bottom-navigation {
+  display: none;
+  background-color: #7a6fac;
+  bottom: 0;
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 768px) {
+  .bottom-navigation {
+    display: flex;
+  }
+  .bottom-navigation__item:hover {
+    cursor: pointer;
+  }
+  .bottom-navigation__item svg {
+    color: #bcb5d7;
+  }
+
+  .bottom-navigation__item-active svg {
+    color: #fff;
+  }
+}
